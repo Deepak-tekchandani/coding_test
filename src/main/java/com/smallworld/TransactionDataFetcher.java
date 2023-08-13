@@ -20,7 +20,6 @@ public class TransactionDataFetcher {
 
     @PostMapping("create")
     public Transaction create(Transaction transaction) {
-        System.out.println("================");
         return transactionRepo.save(transaction);
 
     }
