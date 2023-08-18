@@ -15,11 +15,20 @@ public class Transaction {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long mtn;
+    private Double amount;
 
     private String senderFullName;
+    private Integer senderAge;
     private String beneficiaryFullName;
-    private Double amount;
-    private Boolean complianceIssueSolved;
+
+    private Integer beneficiaryAge;
+
+    private Integer issueId;
+
+    private Boolean issueSolved;
     private String issueMessage;
+
+
+
 }
